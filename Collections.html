@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros. Home</title>
+    <!-- Link Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="warner style.css">
+    <link rel="stylesheet" href="backtotop.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Warner Bros.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="warner.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="movies.html">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tv_shows.html">TV Shows</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="games_apps.html">Games & Apps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="collections.html">Collections</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="feedback.html">Feedback</a>
+                </li>
+            </ul>
+        </div>        
+    </nav>
+    <body>
+
+        <div class="container">
+            <h2>Director Spotlights</h2>
+            <h3>Quentin Tarantino Collection</h3>
+            <p>Discover the iconic films of visionary director Quentin Tarantino, known for his unique storytelling and cinematic style.</p>
+        
+            <h3>Christopher Nolan Showcase</h3>
+            <p>Immerse yourself in the mind-bending worlds of acclaimed filmmaker Christopher Nolan, renowned for his groundbreaking narratives and stunning visuals.</p>
+        
+            <h3>Martin Scorsese Selection</h3>
+            <p>Experience the cinematic brilliance of Martin Scorsese with a curated collection of his most memorable films, spanning decades of filmmaking excellence.</p>
+        
+            <h2>Actor Showcases</h2>
+            <h3>Meryl Streep Showcase</h3>
+            <p>Celebrate the extraordinary talent of Academy Award-winning actress Meryl Streep with a collection of her unforgettable performances across various genres.</p>
+        
+            <h3>Tom Hanks Collection</h3>
+            <p>Journey through the versatile career of beloved actor Tom Hanks, featuring his iconic roles in dramas, comedies, and everything in between.</p>
+        
+            <h3>Leonardo DiCaprio Retrospective</h3>
+            <p>Explore the impressive filmography of Leonardo DiCaprio, one of Hollywood's most acclaimed and versatile actors, known for his captivating performances.</p>
+        
+            <h2>Award Winners and Nominees</h2>
+            <h3>Oscar-Winning Films</h3>
+            <p>Discover a selection of Academy Award-winning movies across different categories, including Best Picture, Best Director, Best Actor, and more.</p>
+        
+            <h3>Golden Globe Nominees</h3>
+            <p>Explore critically acclaimed films that have garnered nominations and recognition at the prestigious Golden Globe Awards, celebrating excellence in film and television.</p>
+        </div>
+        <a href="#" class="back-to-top" onclick="scrollToTop()">Back to Top</a>
+    </section>
+        <footer>
+    
+            <div class="flex">
+                <small>
+                    &copy;2021 Warner Bros.Proudly Created by Warner Bros
+                </small>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/2019/02/facebook_icon.jpg" alt="Facebook">
+                        </a>
+                    </li>
+        
+                    <li>
+                      <a href="#">
+                          <img src="https://onclickwebdesign.com/wp-content/uploads/2019/02/twitter_icon.jpg" alt="Twitter">
+                      </a>
+                  </li>
+        
+                </ul>
+            </div>
+            <script>
+                // Function to scroll back to the top
+                function scrollToTop() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                }
+          
+                // Show or hide back to top button based on scroll position
+                window.addEventListener('scroll', function () {
+                    var backToTopButtons = document.querySelectorAll('.back-to-top');
+                    backToTopButtons.forEach(function (button) {
+                        var section = button.parentElement;
+                        if (section.getBoundingClientRect().bottom < window.innerHeight) {
+                            button.style.display = 'block';
+                        } else {
+                            button.style.display = 'none';
+                        }
+                    });
+                });
+                </script>
+        </footer>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </body>
+        </html>

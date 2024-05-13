@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros. Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="warner style.css">
+    <link rel="stylesheet" href="backtotop.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Warner Bros.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="warner.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="movies.html">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tv_shows.html">TV Shows</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="games_apps.html">Games & Apps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="collections.html">Collections</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="feedback.html">Feedback</a>
+                </li>
+            </ul>
+        </div>        
+    </nav>
+    <main>
+        <section class="hero-image">
+            <img src="pictures/wbfilmslayout_2.webp" alt="WARNER BROS" width="700" height="565"> 
+            <div class="hero-london">
+                </div>
+                </section>
+                </main>
+    <body>
+            <h2>Feedback</h2>
+            <p>We value your input! Please take a moment to share your feedback, suggestions, and thoughts with us. Your feedback helps us improve and tailor our website to better serve your movie-watching needs.</p>
+            
+            <h3>Movie Suggestions</h3>
+            <p>Have a favorite movie you'd love to see featured on our website? Let us know! We're always on the lookout for great movie recommendations.</p>
+            
+            <h3>Website Feedback</h3>
+            <p>How can we make your browsing experience better? Share your thoughts on the website's design, usability, navigation, and overall user experience. Your feedback helps us create a more user-friendly platform for movie enthusiasts like yourself.</p>
+            
+            <h3>Movie Reviews</h3>
+            <p>Seen a movie recently? We'd love to hear your thoughts! Share your reviews and ratings to help other users discover new movies and make informed decisions about what to watch next.</p>
+            
+            <h3>Feature Requests</h3>
+            <p>Got an idea for a new feature or functionality you'd like to see on our website? Whether it's advanced search options, personalized recommendations, or user-generated content, we're all ears! Let us know how we can enhance your movie-watching experience.</p>
+            
+            <h3>General Comments</h3>
+            <p>Have any other comments, questions, or concerns? Feel free to drop us a line! We're here to listen and address any inquiries or feedback you may have.</p>
+            
+            <p>Please create a Warner Bros. account before providing feedback.</p>
+            <form id="accountForm" onsubmit="return createAccount()">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+        
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+        
+                <button type="submit">Create Account</button>
+            </form>
+        
+            <div id="feedbackForm">
+                <h2>Give Feedback</h2>
+                <form id="feedback" onsubmit="return submitFeedback()">
+                    <label for="feedbackText">Your Feedback:</label><br>
+                    <textarea id="feedbackText" name="feedbackText" rows="4" cols="50" required></textarea><br><br>
+                    <button type="submit">Submit Feedback</button>
+                </form>
+                <a href="#" class="back-to-top" onclick="scrollToTop()">Back to Top</a>
+            </div>
+        
+            <script>
+                function createAccount() {
+                    alert("Account created successfully!");
+                    
+                    document.getElementById("feedbackForm").style.display = "block";
+                    
+                    return false;
+                }
+        
+                function submitFeedback() {
+                    alert("Feedback submitted successfully!");
+                    
+                    return false;
+                }
+            </script>
+            <script>
+                
+                function scrollToTop() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                }
+          
+                window.addEventListener('scroll', function () {
+                    var backToTopButtons = document.querySelectorAll('.back-to-top');
+                    backToTopButtons.forEach(function (button) {
+                        var section = button.parentElement;
+                        if (section.getBoundingClientRect().bottom < window.innerHeight) {
+                            button.style.display = 'block';
+                        } else {
+                            button.style.display = 'none';
+                        }
+                    });
+                });
+                </script>
+            <footer>
+    
+                <div class="flex">
+                    <small>
+                        &copy;2021 Warner Bros.Proudly Created by Warner Bros
+                    </small>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="https://onclickwebdesign.com/wp-content/uploads/2019/02/facebook_icon.jpg" alt="Facebook">
+                            </a>
+                        </li>
+            
+                        <li>
+                          <a href="#">
+                              <img src="https://onclickwebdesign.com/wp-content/uploads/2019/02/twitter_icon.jpg" alt="Twitter">
+                          </a>
+                      </li>
+            
+                    </ul>
+                </div>
+            </footer>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </body>
+        </html>

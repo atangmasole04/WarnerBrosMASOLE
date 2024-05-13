@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros. Home</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="warner style.css">
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Warner Bros.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="warner.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="movies.html">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tv_shows.html">TV Shows</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="games_apps.html">Games & Apps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="collections.html">Collections</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="feedback.html">Feedback</a>
+                </li>
+            </ul>
+        </div>        
+    </nav>
+    <body>
+        
+        <button class="scroll-button" onclick="scrollToSection('#section1')">Go to Section 1</button>
+        <button class="scroll-button" onclick="scrollToSection('#section2')">Go to Section 2</button>
+        <button class="scroll-button" onclick="scrollToSection('#section3')">Go to Section 3</button>
+        <button class="scroll-button" onclick="scrollToSection('#section4')">Go to Section 4</button>
+    
+        <!-- Destination sections -->
+        <section id="section1" class="destination-section">
+            <h2>SITCOM</h2>
+            <p>This is the sitcom section.</p>
+        </section>
+    
+        <section id="section2" class="destination-section">
+            <h2>DRAMA</h2>
+            <p>This is the drama section.</p>
+        </section>
+    
+        <section id="section3" class="destination-section">
+            <h2>ACTION</h2>
+            <p>This is the action section.</p>
+        </section>
+    
+        <section id="section4" class="destination-section">
+            <h2>ROMANCE</h2>
+            <p>This is the romance section.</p>
+        </section>
+    
+        <!-- JavaScript function to scroll to the destination sections -->
+        <script>
+            function scrollToSection(sectionId) {
+                document.querySelector(sectionId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        </script>
+    </body>
+    
+    </html>
+    

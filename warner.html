@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros. Home</title>
+    <!-- Link Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="warner style.css">
+    <link rel="stylesheet" href="backtotop.css">
+</head>
+
+<body>
+    
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Warner Bros.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="warner.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="movies.html">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tv_shows.html">TV Shows</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="games_apps.html">Games & Apps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="collections.html">Collections</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="feedback.html">Feedback</a>
+                </li>
+            </ul>
+        </div>        
+    </nav>
+    <main>
+        <section class="hero-image">
+            <img src="pictures/underrated_warner_brothers_movies_by_evanh123_de8kpls-fullview.jpg" alt="WARNER BROS" width="700" height="565"> 
+            <div class="hero-london">
+                </div>
+        </section>
+         <section class="knowing-bars">
+             <div class="flex">
+                 <div class="box">
+                     <h2>Movies</h2>
+                     <p> Check out our latest blockbuster movies. From action-packed adventures to heartwarming dramas, we've got something for everyone
+                      .</p>
+                 <button><a href="Movies.html">More info</a>
+                 </button>   
+                 </div>
+
+                 <div class="box box2">
+                     <h2>TV SHOWS</h2>
+                     <p>Discover our collection of binge-worthy TV shows. Whether you're into comedy, drama, or sci-fi, we have the perfect series for your next marathon
+                     </p>
+                 <button><a href="TV_Shows.html">More info</a></button>   
+              </div>
+
+              <div class="box">
+                    <h2>GAMES AND APPS</h2>
+                    <p>Get ready to level up with our selection of games and apps. From action-packed adventures to mind-bending puzzles, there's something for every gamer.
+                         </p>
+                <button><a href="Games_Apps.html">More info</a></button>   
+              </div>
+             </div>
+             <a href="#" class="back-to-top" onclick="scrollToTop()">Back to Top</a>
+         </section>
+          
+    </main>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+  
+        // Show or hide back to top button based on scroll position
+        window.addEventListener('scroll', function () {
+            var backToTopButtons = document.querySelectorAll('.back-to-top');
+            backToTopButtons.forEach(function (button) {
+                var section = button.parentElement;
+                if (section.getBoundingClientRect().bottom < window.innerHeight) {
+                    button.style.display = 'block';
+                } else {
+                    button.style.display = 'none';
+                }
+            });
+        });
+        </script>
+<footer>
+    
+    <div class="flex">
+        <small>
+            &copy;2021 Warner Bros.Proudly Created by Warner Bros
+        </small>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="https://onclickwebdesign.com/wp-content/uploads/2019/02/facebook_icon.jpg" alt="Facebook">
+                </a>
+            </li>
+
+            <li>
+              <a href="#">
+                  <img src="https://onclickwebdesign.com/wp-content/uploads/2019/02/twitter_icon.jpg" alt="Twitter">
+              </a>
+          </li>
+
+        </ul>
+    </div>
+</footer>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+

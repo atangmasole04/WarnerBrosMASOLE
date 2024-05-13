@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros. Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="warner style.css">
+    <link rel="stylesheet" href="backtotop.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Warner Bros.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="warner.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="movies.html">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tv_shows.html">TV Shows</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="games_apps.html">Games & Apps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="collections.html">Collections</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="feedback.html">Feedback</a>
+                </li>
+            </ul>
+        </div>        
+    </nav>
+    <section class="Movies">
+        <h1>DISCOVER YOUR TASTE</h1>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 7</div>
+  <img src="pictures/Oppenheimer_800x1130.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 7</div>
+  <img src="pictures/hq720.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 7</div>
+  <img src="pictures/download.jpeg" style="width:100%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 7</div>
+  <img src="pictures/1627595444-51VhmY6XE8L._SL500_.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 7</div>
+  <img src="pictures/072e08d88fc26288.webp" style="width:100%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 7</div>
+  <img src="pictures/download (1).jpeg" style="width:100%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6/ 7</div>
+  <img src="pictures/download (3).jpeg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">7 / 7</div>
+    <img src="pictures/download (4).jpeg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    </section>
+    <h1>List of Movies</h1>
+
+    <ul>
+        <li>
+            <img src="pictures/815qtzaP9iL._AC_UF1000,1000_QL80_.jpg" alt="The Shawshank Redemption" class="movie-img">
+            <div>
+                <span class="movie-title">The Shawshank Redemption</span>
+                <p class="movie-description">Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</p>
+            </div>
+        </li>
+        <li>
+            <img src="pictures/image.jpg" alt="The Godfather" class="movie-img">
+            <div>
+                <span class="movie-title">The Godfather</span>
+                <p class="movie-description">The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.</p>
+            </div>
+        </li>
+        <li>
+          <img src="pictures/91JnoM0khKL._AC_UF894,1000_QL80_.jpg" alt="Interstellar" class="movie-img">
+          <div>
+              <span class="movie-title">Interstellar</span>
+              <p class="movie-description">A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.</p>
+          </div>
+      </li>
+      <li>
+          <img src="pictures/Avatar.jpg" alt="Avatar" class="movie-img">
+          <div>
+              <span class="movie-title">Avatar</span>
+              <p class="movie-description">A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.</p>
+          </div>
+      </li>
+      <li>
+          <img src="pictures/Inception.jpg" alt="Inception" class="movie-img">
+          <div>
+              <span class="movie-title">Inception</span>
+              <p class="movie-description">A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO.</p>
+          </div>
+      </li>
+      <li>
+          <img src="pictures/Forrest.jpg" alt="Forrest Gump" class="movie-img">
+          <div>
+              <span class="movie-title">Forrest Gump</span>
+              <p class="movie-description">The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events unfold from the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.</p>
+          </div>
+      </li>
+      <li>
+          <img src="pictures/pulp.jpg" alt="Pulp Fiction" class="movie-img">
+          <div>
+              <span class="movie-title">Pulp Fiction</span>
+              <p class="movie-description">The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.</p>
+          </div>
+      </li>
+      <li>
+        <img src="pictures/titanic.jpeg" alt="Titanic" class="movie-img">
+        <div>
+            <span class="movie-title">Titanic</span>
+            <p class="movie-description">A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.</p>
+        </div>
+    </li>
+    <li>
+      <img src="pictures/matrix.jpeg" alt="The Matrix" class="movie-img">
+      <div>
+          <span class="movie-title">The Matrix</span>
+          <p class="movie-description">A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.</p>
+      </div>
+  </li>
+  <li>
+      <img src="pictures/jurrasic.jpg" alt="Jurassic Park" class="movie-img">
+      <div>
+          <span class="movie-title">Jurassic Park</span>
+          <p class="movie-description">During a preview tour, a theme park suffers a major power breakdown that allows its cloned dinosaur exhibits to run amok.</p>
+      </div>
+      <a href="#" class="back-to-top" onclick="scrollToTop()">Back to Top</a>
+  </li>
+    </ul>
+    <script>
+      // Function to scroll back to the top
+      function scrollToTop() {
+          window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+          });
+      }
+
+      // Show or hide back to top button based on scroll position
+      window.addEventListener('scroll', function () {
+          var backToTopButtons = document.querySelectorAll('.back-to-top');
+          backToTopButtons.forEach(function (button) {
+              var section = button.parentElement;
+              if (section.getBoundingClientRect().bottom < window.innerHeight) {
+                  button.style.display = 'block';
+              } else {
+                  button.style.display = 'none';
+              }
+          });
+      });
+      </script>
+    <footer>
+    
+      <div class="flex">
+          <small>
+              &copy;2021 Warner Bros.Proudly Created by Warner Bros
+          </small>
+          <ul>
+              <li>
+                  <a href="#">
+                      <img src="https://onclickwebdesign.com/wp-content/uploads/2019/02/facebook_icon.jpg" alt="Facebook">
+                  </a>
+              </li>
+  
+              <li>
+                <a href="#">
+                    <img src="https://onclickwebdesign.com/wp-content/uploads/2019/02/twitter_icon.jpg" alt="Twitter">
+                </a>
+            </li>
+  
+          </ul>
+      </div>
+  </footer>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+  </html>
+  
+  
